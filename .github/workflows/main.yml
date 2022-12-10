@@ -1,0 +1,40 @@
+letters = "abcdef"
+
+
+def Checker(string):
+
+    string = string.replace(" ", "").lower()
+
+    total = 0
+
+    for l in letters:
+        count = string.count(l)
+        if count > 1:
+            total += count
+
+    if total > 0:
+        print("Duplicates found.")
+    else:
+        print("No duplicates found.")
+
+
+Checker("string") # Returns "No duplicates found."
+struct HuffmanNode {
+ int character; // character being represented by this node
+ int count; // number of occurrences of that character
+9
+ HuffmanNode* zero; // 0 (left) subtree (NULL if empty)
+ HuffmanNode* one; // 1 (right) subtree (NULL if empty)
+ ... };
+main()
+   w := open("binary","g", "fg=green", "bg=black")
+   every i := 1 to 12 do {
+      GotoRC(w,i,1); writes(w, randbits(80))
+      }
+   WriteImage(w, "binary.gif")
+   Event(w)
+end
+procedure randbits(n)
+   if n = 0 then return ""
+   else return ((?2)-1) || randbits(n-1)
+end
